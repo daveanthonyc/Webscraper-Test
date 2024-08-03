@@ -2,6 +2,9 @@
 
 This is a project to scrape the paginated table of the website of registered marriage celebrants in Australia filtered by those in NSW. There were issues with scraping the table and having an appropriate exit condition to successfully stop the loop, so I just hard coded a fixed number of loops to scrape the table and paginate to the next table page.
 
+The website it scrapes is 'https://marriage.ag.gov.au/statecelebrants/state'.
+However, the HTML structure of the table isn't so straightforward to scrape as it has a series of table row headers inside the table and different columns that have no data.
+
 The resulting scrape outputs **7000+** rows of data. :)
 
 # Installation
